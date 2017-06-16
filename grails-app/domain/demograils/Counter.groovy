@@ -5,6 +5,11 @@ class Counter {
     Integer value = 0
 
     static constraints = {
-        name blank: true, size: 20
+        name blank: true, size: 1..20
+    }
+
+    static mapping = {
+        version false
+        id generator: 'assigned', name: 'name'
     }
 }

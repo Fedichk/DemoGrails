@@ -13,5 +13,21 @@
     <schema id="7" parent="1" name="sakila"/>
     <schema id="8" parent="1" name="sys"/>
     <schema id="9" parent="1" name="world"/>
+    <table id="10" parent="2" name="counter"/>
+    <column id="11" parent="10" name="name">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12" parent="10" name="value">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="13" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>name</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

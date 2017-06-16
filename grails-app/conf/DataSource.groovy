@@ -2,7 +2,7 @@ dataSource {
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
-    dbCreate = "create-drop"
+    dbCreate = "update"
     url = "jdbc:mysql://localhost/grails_test"
     username = "root"
     password = "vita17"
